@@ -31,44 +31,49 @@
             <form name="camposFormulario">
                 <p>Insira quantas pessoas irão no churrasco</p>
                 <input type="number" name="convidados" id="convidados">
-                <section class="comida">
-                    <h2>Carnes</h2>
-                    <div class="campo-form">
-                        <label for="bovina">Bovina</label>
-                        <input type="text" name="bovina" id="bovina" placeholder="Valor do Kg">
+                
+                <div class="blocos-editaveis">
+                    <section class="comida">
+                        <h2>Carnes</h2>
+                        <div class="campo-form">
+                            <label for="bovina">Bovina</label>
+                            <input type="text" name="bovina" id="bovina" placeholder="Valor do Kg">
 
-                    </div>
-                    <div class="campo-form">
-                        <label for="frango">Frango</label>
-                        <input type="text" name="frango" id="frango" placeholder="Valor do Kg">
+                        </div>
+                        <div class="campo-form">
+                            <label for="frango">Frango</label>
+                            <input type="text" name="frango" id="frango" placeholder="Valor do Kg">
 
-                    </div>
-                    <div class="campo-form">
-                        <label for="suina">Suína</label>
-                        <input type="text" name="suina" id="suina" placeholder="Valor do Kg">
+                        </div>
+                        <div class="campo-form">
+                            <label for="suina">Suína</label>
+                            <input type="text" name="suina" id="suina" placeholder="Valor do Kg">
 
-                    </div>
-                </section>
-                <section class="bebida">
-                    <h2>Bebidas</h2>
-                    <div class="campo-form">
-                        <label for="refri">Refrigerante</label>
-                        <input type="text" name="refri" id="refri" placeholder="Valor por Litro">
+                        </div>
+                    </section>
+                    
+                    <section class="bebida">
+                        <h2>Bebidas</h2>
+                        <div class="campo-form">
+                            <label for="refri">Refrigerante</label>
+                            <input type="text" name="refri" id="refri" placeholder="Valor por Litro">
 
-                    </div>
-                    <div class="campo-form">
-                        <label for="cerveja">Cerveja (Lata 355 ml) </label>
-                        <input type="text" name="cerveja" id="cerveja" placeholder="Valor por Unidade">
+                        </div>
+                        <div class="campo-form">
+                            <label for="cerveja">Cerveja (Lata 355 ml) </label>
+                            <input type="text" name="cerveja" id="cerveja" placeholder="Valor por Unidade">
 
-                    </div>
-                    <div class="campo-form">
-                        <label for="quantidadePessoasBebemCerveja">N° de pessoas que bebem cerveja</label>
-                        <input type="number" name="quantidadePessoasBebemCerveja" id="quantidadePessoasBebemCerveja" placeholder="Número de Pessoas">
+                        </div>
+                        <div class="campo-form">
+                            <label for="quantidadePessoasBebemCerveja">N° de pessoas que bebem cerveja</label>
+                            <input type="number" name="quantidadePessoasBebemCerveja" id="quantidadePessoasBebemCerveja" placeholder="Número de Pessoas">
 
-                    </div>
+                        </div>
 
 
-                </section>
+                    </section>
+                </div>
+
                 <button type="submit" class="btn-calcular" id="calcular">
                     Fazer Calculo
                 </button>
