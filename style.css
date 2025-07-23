@@ -1,9 +1,18 @@
+:root{
+    --purple-dark: #382194;
+    --purple-ligth: #5840ba;
+    --text-color: #646363;
+    --bg-gray: #f6f6f7;
+
+}
+
 *{
     font-family: "Inter", sans-serif;
 
 }
 
-header{
-    
+html, body{
+    margin: 0;
+    padding: 0;
 
 }
