@@ -72,7 +72,7 @@ input:focus{
 
 }
 
-.blocos-editaveis{
+.blocos-editaveis, .campos-resposta{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
@@ -133,6 +133,57 @@ input:focus{
 
 
 }
+
+
+.resultado-section{
+    margin: 50px 0;
+    background-color: #fff;
+    border-radius: 5px;    
+
+}
+
+.campos-resposta{
+    align-items: baseline;
+
+
+}
+
+.titulo-secao{
+    padding: 20px 0;
+    text-align: center;
+    color: var(--purple-ligth);
+    font-weight: 900;
+}
+
+
+.tabela {
+    width: 100%;
+    padding: 10px;
+    border-spacing: 0 10px;
+
+}
+
+.tabela tr:nth-child(even)
+{
+    background-color: var(--bg-gray);
+
+}
+.tabela th, .tabela td{
+    color:  var(--text-color);
+    font-weight: 400;
+    text-align: start;
+    padding: 10px;
+
+}
+
+
+.tabela .valor-resposta{
+    font-weight: 700;
+
+}
+
+
+
 
 
 
