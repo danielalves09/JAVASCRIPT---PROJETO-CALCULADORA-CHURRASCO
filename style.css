@@ -8,6 +8,7 @@
 
 *{
     font-family: "Inter", sans-serif;
+    box-sizing: border-box;
 
 }
 
@@ -80,9 +81,56 @@ input:focus{
 
 }
 
+.blocos-editaveis section{
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.blocos-editaveis h2{
+    text-align: center;
+    color: var(--purple-ligth);
+}
+
+.campo-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.campo-form input{
+    max-width: 120px;
+
+}
+
+.campo-form label{
+    font-size: .8rem;
+    color: var(--text-color);
+}
+
+.btn-calcular{
+    all: unset;
+    margin: 20px auto;
+    display: block;
+    background-color: var(--purple-ligth);
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+    
+}
+
+.btn-calcular:hover{
+    transform: scale(1.03);
+    
 
 
 
+}
 
 
 
