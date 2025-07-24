@@ -92,6 +92,7 @@ input:focus{
 .blocos-editaveis h2{
     text-align: center;
     color: var(--purple-ligth);
+    font-weight: 900;
 }
 
 .campo-form{
@@ -118,10 +119,11 @@ input:focus{
     background-color: var(--purple-ligth);
     color: #fff;
     padding: 10px 40px;
+    font-weight: 700;
     border-radius: 5px;
     cursor: pointer;
     transition: .4s;
-    
+
 }
 
 .btn-calcular:hover{
