@@ -8,8 +8,9 @@ const informacoesdeEntrada = obterFormulario();
 function bebida(){
     let valores = {
         quantidadeConvidados: informacoesdeEntrada.convidados.value,
-        quantidadePessoasBebemCerveja: informacoesdeEntrada.quantidadePessoasBebemCerveja.value
-
+        quantidadePessoasBebemCerveja: informacoesdeEntrada.quantidadePessoasBebemCerveja.value,
+        valorRefri: informacoesdeEntrada.refri.value,
+        valorCerveja: informacoesdeEntrada.cerveja.value
     }
 
         console.log(calcularBebida(valores))
