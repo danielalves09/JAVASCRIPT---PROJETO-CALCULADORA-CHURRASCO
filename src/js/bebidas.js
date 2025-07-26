@@ -8,10 +8,10 @@ valorCerveja}){
     //return valor(quantidadeBebida, valorRefri, valorCerveja);
     return {
         quantidades: {
-            ...quantidadeBebida
+            ... quantidadeBebida
         },
         valores:{
-            ...valorBebida
+            ... valorBebida
 
         },
         total: total(valorBebida)
