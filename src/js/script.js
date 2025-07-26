@@ -11,8 +11,8 @@ function bebida(){
         quantidadeConvidados: informacoesdeEntrada.convidados.value,
         quantidadePessoasBebemCerveja: informacoesdeEntrada.quantidadePessoasBebemCerveja.value,
         valorRefri: informacoesdeEntrada.refri.value,
-        valorCerveja: informacoesdeEntrada.cerveja.value
-    }
+        valorCerveja: informacoesdeEntrada.cerveja.value,
+    };
 
         let valoresBebidaCalculado = calcularBebida(valores);
         mostrarBebida(valoresBebidaCalculado)
@@ -20,9 +20,12 @@ function bebida(){
 
 function comida(){
     let valores = {
-        quantidadeConvidados: informacoesdeEntrada.convidados.value
+        quantidadeConvidados: informacoesdeEntrada.convidados.value,
+        valorBovina: informacoesdeEntrada.bovina.value,
+        valorFrango: informacoesdeEntrada.frango.value,
+        valorSuina: informacoesdeEntrada.suina.value,
 
-    }
+    };
     console.log(calcularComida(valores))
 
 
