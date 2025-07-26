@@ -1,5 +1,5 @@
 import { calcularBebida } from "./bebidas.js";
-import { obterFormulario } from "./dom.js";
+import { obterFormulario, mostrarBebida } from "./dom.js";
 
 const informacoesdeEntrada = obterFormulario();
 
@@ -13,7 +13,8 @@ function bebida(){
         valorCerveja: informacoesdeEntrada.cerveja.value
     }
 
-        console.log(calcularBebida(valores))
+        let valoresBebidaCalculado = calcularBebida(valores);
+        mostrarBebida(valoresBebidaCalculado)
 }
 
 

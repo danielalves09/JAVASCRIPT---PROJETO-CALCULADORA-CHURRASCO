@@ -4,4 +4,9 @@ function obterFormulario(){
 
 }
 
-export {obterFormulario}
+function mostrarBebida(bebida){
+
+
+}
+
+export {obterFormulario, mostrarBebida}

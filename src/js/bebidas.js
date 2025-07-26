@@ -6,7 +6,18 @@ valorCerveja}){
     quantidadePessoasBebemCerveja);
     let valorBebida = valor(quantidadeBebida, valorRefri, valorCerveja);
     //return valor(quantidadeBebida, valorRefri, valorCerveja);
-    return total(valorBebida);
+    return {
+        quantidades: {
+            ...quantidadeBebida
+        },
+        valores:{
+            ...valorBebida
+
+        },
+        total: total(valorBebida)
+
+
+    };
 
 }
 
