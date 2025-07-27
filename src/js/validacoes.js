@@ -37,8 +37,9 @@ function verificarValorPessoa(valorCerveja, quantidadePessoasBebemCerveja){
 //validações de campos
 
 function validacoesCampos(informacoesdeEntrada){
-     verificarNumeroDePessoasBebem(informacoesdeEntrada.quantidadePessoasBebemCerveja, informacoesdeEntrada.convidados)
-
+     verificarNumeroDePessoasBebem(informacoesdeEntrada.quantidadePessoasBebemCerveja, informacoesdeEntrada.convidados);
+    
+     verificarQuantidadeConvidados(informacoesdeEntrada.convidados);
 }
 
 function verificarNumeroDePessoasBebem(pessoasBebem, convidados){
@@ -54,4 +55,15 @@ function verificarNumeroDePessoasBebem(pessoasBebem, convidados){
 
 }
 
+
+function verificarQuantidadeConvidados(convidados){
+    convidados.addEventListener('input', () => {
+        if(parseInt(convidados.value) < 2){
+            convidados.setCustomValidity("Informe mais de um convidado");
+            return;
+        }
+         convidados.setCustomValidity("");
+
+    });
+}
 export { validacoes , validacoesCampos};
