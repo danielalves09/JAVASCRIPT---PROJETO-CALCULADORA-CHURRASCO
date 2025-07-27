@@ -1,24 +1,24 @@
-function calcularBebida({quantidadeConvidados, 
+
+function calcularBebida({
+    quantidadeConvidados,
     quantidadePessoasBebemCerveja,
-valorRefri,
-valorCerveja}){
-   let quantidadeBebida = quantidade(quantidadeConvidados, 
-    quantidadePessoasBebemCerveja);
+    valorRefri,
+    valorCerveja,
+}) {
+    let quantidadeBebida = quantidade(
+        quantidadeConvidados,
+        quantidadePessoasBebemCerveja
+    );
     let valorBebida = valor(quantidadeBebida, valorRefri, valorCerveja);
-    //return valor(quantidadeBebida, valorRefri, valorCerveja);
     return {
         quantidades: {
-            ... quantidadeBebida
+            ...quantidadeBebida,
         },
-        valores:{
-            ... valorBebida
-
+        valores: {
+            ...valorBebida,
         },
-        total: total(valorBebida)
-
-
+        total: total(valorBebida),
     };
-
 }
 
 function quantidade(quantidadeConvidados, quantidadePessoasBebemCerveja){

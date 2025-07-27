@@ -6,16 +6,16 @@ const informacoesdeEntrada = obterFormulario();
 
 
 
-function bebida(){
+function bebida() {
     let valores = {
         quantidadeConvidados: informacoesdeEntrada.convidados.value,
-        quantidadePessoasBebemCerveja: informacoesdeEntrada.quantidadePessoasBebemCerveja.value,
+        quantidadePessoasBebemCerveja:
+            informacoesdeEntrada.quantidadePessoasBebemCerveja.value,
         valorRefri: informacoesdeEntrada.refri.value,
         valorCerveja: informacoesdeEntrada.cerveja.value,
     };
-
-        let valoresBebidaCalculado = calcularBebida(valores);
-        mostrarBebida(valoresBebidaCalculado)
+    let valoresBebidaCalculado = calcularBebida(valores);
+    mostrarBebida(valoresBebidaCalculado);
 }
 
 function comida(){
@@ -38,7 +38,7 @@ function comida(){
 informacoesdeEntrada.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    //bebida();
+    bebida();
     comida();
 
 })

@@ -8,7 +8,7 @@ function obterFormulario(){
 
 function mostrarBebida(bebida){
     inserirValores('valor-refri', bebida.valores.refri);
-    inserirValores('valor-Cerveja', bebida.valores.cerveja);
+    inserirValores('valor-cerveja', bebida.valores.cerveja);
     inserirValores('valor-total-bebida', bebida.total.valor);
 
 
