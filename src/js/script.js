@@ -2,6 +2,7 @@ import { calcularBebida } from "./bebidas.js";
 import { calcularComida } from "./comida.js";
 import { obterFormulario, mostrarBebida, mostrarComida } from "./dom.js";
 import { formatarMoeda } from "./mascara.js";
+import { validacoes } from "./validacoes.js";
 
 const informacoesdeEntrada = obterFormulario();
 
@@ -40,7 +41,10 @@ function comida(){
 informacoesdeEntrada.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    bebida();
-    comida();
+    if(validacoes(informacoesdeEntrada)){
+        bebida();
+        comida();
+    }
+    
 
 })
