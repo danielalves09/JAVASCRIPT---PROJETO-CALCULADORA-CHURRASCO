@@ -48,4 +48,4 @@ function stringParaFloat(input){
 
 }
 
-export {inserirValores, inserirQuantidades, stringParaFloat}
+export {inserirValores, inserirQuantidades, stringParaFloat, obterElementoId}

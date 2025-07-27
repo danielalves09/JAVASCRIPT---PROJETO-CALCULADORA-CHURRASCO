@@ -1,4 +1,4 @@
-import  { inserirValores , inserirQuantidades} from "./helpers.js";
+import  { inserirValores , inserirQuantidades, obterElementoId} from "./helpers.js";
 
 function obterFormulario(){
 
@@ -30,4 +30,15 @@ function mostrarComida(comida){
 
 }
 
-export { obterFormulario, mostrarBebida, mostrarComida };
+function zerarcampos(inputs){
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].value = "";
+    }
+}
+
+function apresentarResposta() {
+    const resposta = obterElementoId('resultado');
+    resposta.style.height = 'auto'
+}
+
+export { obterFormulario, mostrarBebida, mostrarComida, zerarcampos, apresentarResposta };
