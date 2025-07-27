@@ -1,3 +1,7 @@
+import { stringParaFloat } from "./helpers.js";
+
+
+
 let multiplicadorBovina = .2;
 let multiplicadorFrango = .1;
 let multiplicadorSuina = .1;
@@ -39,9 +43,9 @@ function valor(quantidadesComida, valorBovina, valorFrango, valorSuina){
 
     let bovina, frango, suina;
 
-    bovina = quantidadesComida.bovina * valorBovina;
-    frango = quantidadesComida.frango * valorFrango;
-    suina = quantidadesComida.suina * valorSuina;
+    bovina = quantidadesComida.bovina * stringParaFloat(valorBovina);
+    frango = quantidadesComida.frango * stringParaFloat(valorFrango);
+    suina = quantidadesComida.suina * stringParaFloat(valorSuina);
 
     return { bovina, frango, suina };
 

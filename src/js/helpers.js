@@ -26,4 +26,18 @@ function converterMoeda(valor){
 
 }
 
-export {inserirValores, inserirQuantidades}
+function stringParaFloat(input){
+    let valorAlterado;
+
+    valorAlterado = parseFloat(input.replace(',', '.'));
+
+    if(isNaN(valorAlterado)){
+        valorAlterado = 0;
+
+    }
+
+    return valorAlterado;
+
+}
+
+export {inserirValores, inserirQuantidades, stringParaFloat}
