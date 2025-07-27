@@ -17,8 +17,17 @@ function mostrarBebida(bebida){
 }
 
 function mostrarComida(comida){
+    inserirValores('valor-bovina', comida.valores.bovina);
+    inserirValores('valor-frango', comida.valores.frango);
+    inserirValores('valor-suina', comida.valores.suina);
+    inserirValores('valor-total-comida', comida.totais.valor);
+
+    inserirQuantidades('qtd-bovina', comida.quantidades.bovina.toFixed(3), 'g');
+    inserirQuantidades('qtd-frango', comida.quantidades.frango.toFixed(3), 'g');
+    inserirQuantidades('qtd-suina', comida.quantidades.suina.toFixed(3), 'g');
+    inserirQuantidades('qtd-total-comida', comida.totais.quantidadeTotal.toFixed(3));
 
 
 }
 
-export {obterFormulario, mostrarBebida}
+export { obterFormulario, mostrarBebida, mostrarComida };
