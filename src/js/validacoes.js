@@ -1,3 +1,5 @@
+
+//validações de Alerta
 function validacoes(informacoesdeEntrada){
     let valorCerveja = informacoesdeEntrada.cerveja.value;
     let quantidadePessoasBebemCerveja = informacoesdeEntrada.quantidadePessoasBebemCerveja.value;
@@ -32,4 +34,24 @@ function verificarValorPessoa(valorCerveja, quantidadePessoasBebemCerveja){
         return true;
 }
 
-export { validacoes };
+//validações de campos
+
+function validacoesCampos(informacoesdeEntrada){
+     verificarNumeroDePessoasBebem(informacoesdeEntrada.quantidadePessoasBebemCerveja, informacoesdeEntrada.convidados)
+
+}
+
+function verificarNumeroDePessoasBebem(pessoasBebem, convidados){
+    pessoasBebem.addEventListener('input',() =>{
+        if(parseInt(pessoasBebem.value) > parseInt(convidados.value)){
+
+            pessoasBebem.setCustomValidity("O numero de pessoas que bebem precisa ser menor que a quantidade de convidados");
+            
+              return
+        }
+        pessoasBebem.setCustomValidity('');
+    });
+
+}
+
+export { validacoes , validacoesCampos};
