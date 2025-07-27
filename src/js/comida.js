@@ -9,7 +9,17 @@ function calcularComida({quantidadeConvidados, valorBovina, valorFrango, valorSu
     let valoresComida = valor(quantidadesComida, valorBovina, valorFrango, valorSuina);
     
     
-    return total(quantidadesComida, valoresComida);
+    return {
+        quantidades:{
+            ... quantidadesComida
+        },
+        valores: {
+            ... valoresComida
+        },
+        totais: {
+            ... total(quantidadesComida, valoresComida)
+        }
+    };
 
 }
 

@@ -26,7 +26,10 @@ function comida(){
         valorSuina: informacoesdeEntrada.suina.value,
 
     };
-    console.log(calcularComida(valores))
+    
+    let valoresComidaCalculado = calcularComida(valores);
+
+    mostrarComida(valoresComidaCalculado);
 
 
 }
