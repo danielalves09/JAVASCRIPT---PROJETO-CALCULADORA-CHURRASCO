@@ -4,12 +4,20 @@ function obterElementoId(nomeCampo){
 }
 
 function inserirValores(elemento, valor){
+    if(valor == 0 || isNaN(valor)){
+        return (obterElementoId(elemento).innerText = '--')
+    }
+
     return obterElementoId(elemento).innerText = `${converterMoeda(valor)}`; 
 
 }
 
 function inserirQuantidades(elemento, valor, unidade = ''){
+    if(valor == 0 || isNaN(valor)){
+        return (obterElementoId(elemento).innerText = '--');
+    }
 
+    
     obterElementoId(elemento).innerText = `${valor}${unidade}`;
 
 }
